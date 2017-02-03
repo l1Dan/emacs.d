@@ -84,7 +84,8 @@
 
 ;; 字体
 (if (eq system-type 'gnu/linux)
-    (set-default "Inconsolata-13"))
+    (set-default-font "Inconsolata-16"))
+    ;; (set-frame-font  "Source Code Pro-14"))
 (if (eq system-type 'darwin)
     (set-default-font "Monaco-15"))
 
