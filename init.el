@@ -82,7 +82,11 @@
 (global-hl-line-mode t)
 (global-linum-mode t)
 
-(set-default-font "Monaco-15") ;; 字体
+;; 字体
+(when (eq system-type "gnu/linux")
+  (set-default-font "Source Code Pro-15"))
+(when (eq system-type "darwin")
+  (set-default-font "Monaco-15"))
 
 (setq-default
  initial-scratch-message (concat ";; Happy hacking, " user-login-name " - Emacs ♥ you!\n\n"))
